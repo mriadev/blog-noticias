@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 col-md-8">
                 <h1 class="text-primary">{{ $post->title }}</h1>
-                <p class="text-muted">{{ $post->created_at->diffForHumans() }}</p>
+                <p class="text-muted">Fecha de creacion: {{ $post->created_at->format('d/m/Y') }} {{ $post->created_at->diffForHumans() }}</p>
                 <img src="/images/{{ $post->image }}" class="img-fluid" alt="{{ $post->name }}">
                 <p class="mt-4">{{ $post->description }}</p>
             </div>
